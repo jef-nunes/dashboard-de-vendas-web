@@ -1,0 +1,130 @@
+:root{
+    --primary-text-color: rgb(238, 244, 234);
+    --main-bg-color: rgb(33, 33, 33);
+    --main-border-color: rgb(41, 46, 57);
+    --card-bg-color: rgb(52, 52, 52);
+    --custom-green: springgreen;
+    --custom-red: rgb(255, 97, 97);
+    --palette-1-a: rgb(126, 244, 97);
+    --palette-1-b: #f882d1;
+    --palette-1-c: #62b0ff;
+    --palette-1-d: #ffd676;
+    --palette-1-e: rgb(255, 148, 109);
+}
+
+html{
+    font-size: 12px;
+}
+
+body{
+    font-family: "Arial";
+    background-color: var(--main-bg-color);
+}
+
+*{
+    margin: 0;
+}
+
+header{
+    top: 0;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    z-index: 1;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    z-index: 0;
+}
+
+.titulo-da-pagina{
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    user-select: none;
+    padding: 1rem;
+}
+
+.charts-container-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    width: 1000px;
+}
+
+.charts-container-2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    width: 1500px;
+    flex-wrap: wrap;
+}
+
+.card{
+    transition: transform 0.3s ease-in-out;
+    margin-top: 3rem;
+    background-color: var(--card-bg-color);
+    padding: 10px;
+    border-radius: 15px;
+    width: fit-content;
+    overflow-x: auto;
+    height: fit-content;
+    opacity: 0.95;
+}
+
+.card:hover{
+    opacity: 1;
+    transform: translateY(-10px);
+    border: 2px solid rgb(92, 92, 92);
+}
+
+#chart-1-card{
+    padding-bottom: 30px;
+}
+
+.text-stat-label{
+    font-weight: bold;
+    font-size: 25px;
+    color: var(--primary-text-color);
+}
+
+.text-stat-value{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.text-stat-container{
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    width: fit-content;
+}
+
+#receita-value{
+    color: var(--custom-green);
+}
+
+#despesas-value{
+    color: var(--custom-red);
+}
+
+#produtos-vendidos, #produto-mais-vendido-value{
+    color: var(--primary-text-color);
+}

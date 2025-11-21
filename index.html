@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <!-- Google Charts -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Dashboard</title>
+  </head>
+
+  <body>
+    <header>
+        <i class="fa-solid fa-chart-pie fa-2xl" style="color: rgb(255, 255, 255);"></i>
+        <h1 class="titulo-da-pagina">Dashboard de Vendas</h1>
+    </header>
+    <main>
+        <div class="charts-container-1">
+            <div class="card">
+                <div class="text-stat-container">
+                    <span class="text-stat-label">Receita total: </span>
+                    <span class="text-stat-value" id="receita-value">?</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="text-stat-container">
+                    <span class="text-stat-label">Despesa total: </span>
+                    <span class="text-stat-value" id="despesas-value">R$ 22130.54</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="text-stat-container">
+                    <span class="text-stat-label">Produto mais vendido: </span>
+                    <span class="text-stat-value" id="produto-mais-vendido-value">Mouse Gamer</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="text-stat-container">
+                    <span class="text-stat-label">Produtos vendidos: </span>
+                    <span class="text-stat-value" id="produtos-vendidos">220</span>
+                </div>
+            </div>
+        </div>
+        <div class="charts-container-2">
+            <div class="card" id="chart-1-card">
+                <div id="chart1"></div>
+            </div>
+            <div class="card">
+                <div id="chart2"></div>
+            </div>
+            <div class="card">
+                <div id="chart3"></div>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="js/api-estoque.js"></script>
+    <script type="module" src="js/preparar-dados.js"></script>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
